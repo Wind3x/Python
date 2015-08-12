@@ -25,7 +25,8 @@ for line in lines:
 ips = set(ips)
 ips = sorted(ips)
 
-outfile = open('lines.out', 'w')
+name1 = infile + '.lines.out'
+outfile = open(name1, 'w')
 for line in ips:
         outfile.write(str(line) + '\n')
 
@@ -45,6 +46,7 @@ for item in only:
 dedup = set(dedup)
 dedup = sorted(dedup)
 
-outfile2 = file('ips.out', 'w')
+name2 = infile + '.ips.out'
+outfile2 = file(name2, 'w')
 for item in dedup:
         outfile2.write(str(item) + '\n')
